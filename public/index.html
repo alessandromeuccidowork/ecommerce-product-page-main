@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>| E-commerce product page |</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <header id="header-section" class="w-full sm:px-20">
+    <section class="flex flex-row items-center justify-between border-b-2 py-5">
+      <div>
+        <img class="h-5" src="../images/logo.svg" alt="">
+      </div>
+      <div class="hidden text-gray-500 md:flex flex-row gap-6">  
+        <a href="">Collections</a>
+        <a href="">Men</a>
+        <a href="">Women</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+      </div>
+  
+      <div class="flex flex-row items-center gap-2">
+        <img id="cart" class="h-4" src="../images/icon-cart.svg" alt="">
+        <span id="cart-items" class="bg-orange-400 rounded-xl"></span>
+        <img class="w-10" src="../images/image-avatar.png" alt="">
+      </div>
+    </section>
+
+    <section id="section-cart" class="shadow-2xl">
+
+    </section>
+  </header>
+
+  <main class="sm:px-36 sm:pt-20">
+    <section>
+      <div class="md:grid grid-cols-2 gap-16">
+        <div class="flex flex-col">
+
+          <!-- modal -->
+          <section id="modal">  
+            <div> 
+              <!-- modal images -->
+              <div  id="modal-content">
+                <div class="modal">
+                  <img class="modal-prod rounded-xl shadow-2xl" src="../images/image-product-1.jpg" alt="">
+                </div>
+                <div class="modal">
+                  <img class="modal-prod rounded-xl shadow-2xl" src="../images/image-product-2.jpg" alt="">
+                </div>
+                <div class="modal">
+                  <img class="modal-prod h-auto rounded-xl shadow-2xl" src="../images/image-product-3.jpg" alt="">
+                </div>
+                <div class="modal">
+                  <img class="modal-prod h-auto rounded-xl shadow-2xl" src="../images/image-product-4.jpg" alt="">
+                </div>
+              </div>              
+              <!-- button close -->
+              <div>
+                <img class="close shadow-md" src="../images/icon-close.svg" alt="">
+              </div>   
+               <!-- button prev next -->
+              <div>
+                <img class="prev shadow-md" src="../images/icon-previous.svg" alt="">
+                <img class="next shadow-md" src="../images/icon-next.svg" alt="">
+              </div>
+              
+            </div>
+          </section>
+          
+          <!-- hero image -->
+          <section id="hero-img">
+            <div class="product">
+              <img id="product1" class="w-full h-auto rounded-xl" src="../images/image-product-1.jpg" alt="">
+            </div>
+            <div class="product">
+              <img id="product2" class="w-full h-auto rounded-xl" src="../images/image-product-2.jpg" alt="">
+            </div>
+            <div class="product">
+              <img id="product3" class="w-full h-auto rounded-xl" src="../images/image-product-3.jpg" alt="">
+            </div>
+            <div class="product">
+              <img id="product4" class="w-full h-auto rounded-xl" src="../images/image-product-4.jpg" alt="">
+            </div>
+          </section>
+          
+
+          <!-- thumbnails -->
+          <section id="thumb-container" class="flex flex-row justify-around pt-6">
+            <div id="thumb-1" class="thumb">
+              <img class="w-16 md:h-20 rounded-xl shadow-md" src="../images/image-product-1-thumbnail.jpg" alt="">
+            </div>
+            <div id="thumb-2" class="thumb">
+              <img class="w-16 md:h-20 rounded-xl shadow-md" src="../images/image-product-2-thumbnail.jpg" alt="">
+            </div>
+            <div id="thumb-3" class="thumb">
+              <img class="w-16 md:h-20 rounded-xl shadow-md" src="../images/image-product-3-thumbnail.jpg" alt="">
+            </div>
+            <div id="thumb-4" class="thumb">
+              <img class="w-16 md:h-20 rounded-xl shadow-md" src="../images/image-product-4-thumbnail.jpg" alt="">
+            </div>    
+          </section>
+        </div>
+
+        <section class="px-4">
+          <h1 class="text-orange-400 text-base font-bold uppercase pt-5 md:pt-10">Sneaker Company</h1>
+          <h2 class="text-2xl sm:text-5xl font-bold pt-4 md:pt-5">Fall Limited Edition Sneakers</h2>
+          
+    
+          <p class="text-gray-400 pt-4 sm:pt-12">
+            These low-profile sneakers are your perfect casual wear companion. Featuring a 
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+          
+          <div class="pt-5">
+            <span class="font-black pr-2">$125.00</span>
+            <span class="bg-orange-400 bg-opacity-20 text-orange-400 font-black px-2 py-0.5 text-xs rounded-sm">50%</span>
+          </div>
+          <span class="font-black text-gray-400 text-xs line-through">$250.00</span>
+    
+          <div class="md:flex flex-row gap-10 pt-5 w-full">
+            <div class="py-3 flex flex-row justify-around items-center bg-gray-100 rounded-lg md:w-3/5 shadow-md">
+              <button><img id="minus-btn" src="../images/icon-minus.svg" alt=""></button>
+              <span id="counter" class="font-bold"> 0 </span>
+              <button><img id="plus-btn" src="../images/icon-plus.svg" alt=""></button>
+            </div>
+            <button id="cart-btn" class="my-4 flex flex-row items-center justify-center gap-4 bg-orange-400 text-white rounded-lg w-full py-3 shadow-md">
+              <span><img class="w-4" src="../images/icon-cart.svg" alt=""></span>
+              <span>Add to cart</span>
+            </button>
+          </div>
+        </section>
+      </div>
+    </section> 
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
