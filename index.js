@@ -43,7 +43,7 @@ const createCartDiv = function() {
   header.innerText = 'Cart';
   header.setAttribute('id', 'cart-header');
 
-  img.setAttribute('src', '../images/image-product-1-thumbnail.jpg');
+  img.setAttribute('src', './images/image-product-1-thumbnail.jpg');
   img.setAttribute('id', 'thumbinal-cart');
 
   description.innerText = 'Fall Limited Edition Sneakers';
@@ -52,7 +52,7 @@ const createCartDiv = function() {
   price.setAttribute('id', 'actual-price');
   
   button.setAttribute('id', 'delete-cart');
-  deleteButton.setAttribute('src', '../images/icon-delete.svg');
+  deleteButton.setAttribute('src', './images/icon-delete.svg');
   
   checkOut.innerText = 'Checkout';
   checkOut.setAttribute('id', 'checkout-btn');
