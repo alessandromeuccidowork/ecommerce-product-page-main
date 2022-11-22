@@ -16,7 +16,20 @@
   display: none;
 }
 
+button:hover {
+  filter: opacity(50%);
+}
 
+a:hover {
+  text-decoration: underline rgb(251 146 60);
+  text-underline-offset: 2rem;
+}
+
+.thumb:hover {
+  filter: opacity(80%);
+  border: rgb(251 146 60) solid;
+  border-radius: 0.9rem;
+}
 
 /* modal */
 #modal {

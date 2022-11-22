@@ -753,6 +753,22 @@ html {
   display: none;
 }
 
+button:hover {
+  filter: opacity(50%);
+}
+
+a:hover {
+  -webkit-text-decoration: underline rgb(251 146 60);
+          text-decoration: underline rgb(251 146 60);
+  text-underline-offset: 2rem;
+}
+
+.thumb:hover {
+  filter: opacity(80%);
+  border: rgb(251 146 60) solid;
+  border-radius: 0.9rem;
+}
+
 /* modal */
 
 #modal {
@@ -970,6 +986,11 @@ html {
 }
 
 @media (min-width: 960px){
+  .md\:my-4{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -980,6 +1001,10 @@ html {
 
   .md\:h-20{
     height: 5rem;
+  }
+
+  .md\:w-auto{
+    width: auto;
   }
 
   .md\:w-3\/5{
