@@ -237,12 +237,12 @@ a:hover {
   }
 }
 
-/* #nav-menu{
+#nav-menu{
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 60px;
-} */
+}
 
 @media(max-width:700px){
   .hamburger{
