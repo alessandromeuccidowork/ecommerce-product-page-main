@@ -34,6 +34,10 @@ a:hover {
   border-radius: 0.9rem;
 }
 
+
+
+/* Navbar */
+
 .bar{
   display: block;
   width: 25px;
@@ -43,6 +47,15 @@ a:hover {
   transition: all 0.3s ease;
   background-color: black;
 }
+
+#nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+
 
 /* modal */
 #modal {
@@ -235,13 +248,6 @@ a:hover {
   .modal-prod {
     width: 35rem;
   }
-}
-
-#nav-menu{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
 }
 
 @media(max-width:700px){

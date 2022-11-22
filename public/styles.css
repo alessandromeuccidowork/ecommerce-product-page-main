@@ -557,8 +557,8 @@ html {
   width: 2.5rem;
 }
 
-.w-\[35rem\]{
-  width: 35rem;
+.w-\[30rem\]{
+  width: 30rem;
 }
 
 .w-16{
@@ -567,10 +567,6 @@ html {
 
 .w-4{
   width: 1rem;
-}
-
-.w-\[30rem\]{
-  width: 30rem;
 }
 
 .grid-cols-2{
@@ -619,6 +615,10 @@ html {
 
 .gap-4{
   gap: 1rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .rounded-xl{
@@ -800,6 +800,8 @@ a:hover {
   border-radius: 0.9rem;
 }
 
+/* Navbar */
+
 .bar{
   display: block;
   width: 25px;
@@ -807,6 +809,13 @@ a:hover {
   margin: 5px auto;
   transition: all 0.3s ease;
   background-color: black;
+}
+
+#nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 
 /* modal */
@@ -1000,13 +1009,6 @@ a:hover {
   }
 }
 
-#nav-menu{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
-}
-
 @media(max-width:700px){
   .hamburger{
     display: block;
@@ -1096,6 +1098,10 @@ a:hover {
     gap: 4rem;
   }
 
+  .md\:gap-11{
+    gap: 2.75rem;
+  }
+
   .md\:pt-10{
     padding-top: 2.5rem;
   }
@@ -1108,5 +1114,9 @@ a:hover {
 @media (min-width: 1440px){
   .lg\:gap-20{
     gap: 5rem;
+  }
+
+  .lg\:gap-16{
+    gap: 4rem;
   }
 }

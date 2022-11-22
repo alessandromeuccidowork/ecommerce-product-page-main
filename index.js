@@ -169,6 +169,8 @@ const deleteBasket = function() {
 }
 
 
+
+// hamburger menu
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("actives");
   navMenu.classList.toggle("actives");
@@ -179,13 +181,21 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   navMenu.classList.remove("actives");
 }))
 
-let deleteBtn = document.querySelector('button#delete-cart');
-deleteBtn.addEventListener('click', deleteBasket);
+
 
 // open checkout event
 cart.addEventListener('click', function() {
   sectionCart.classList.toggle('show');
 });
+
+
+let deleteBtn = document.querySelector('button#delete-cart');
+deleteBtn.addEventListener('click', deleteBasket);
+
+let checkOutBtn = document.querySelector('button#checkout-btn');
+checkOutBtn.addEventListener('click', function() {
+  return alert('Thanks for shopping at Sneakers! As soon as your package is on its way, you will receive a delivery confirmation from us by email.')
+})
 
 
 // open modal event
