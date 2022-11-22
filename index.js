@@ -1,6 +1,9 @@
 
 // variables
 
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector("#nav-menu");
+
 let sectionCart = document.querySelector('#section-cart');
 let cart = document.querySelector('#cart');
 let cartItems = document.querySelector('#cart-items');
@@ -164,6 +167,17 @@ const deleteBasket = function() {
 
   price.innerHTML = '$125 ' + 'x ' + countProduct + ' = ' + actualPrice + ' $';
 }
+
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("actives");
+  navMenu.classList.toggle("actives");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("actives");
+  navMenu.classList.remove("actives");
+}))
 
 let deleteBtn = document.querySelector('button#delete-cart');
 deleteBtn.addEventListener('click', deleteBasket);
