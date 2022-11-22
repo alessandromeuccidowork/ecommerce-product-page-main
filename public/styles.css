@@ -519,9 +519,23 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
+.m-auto{
+  margin: auto;
+}
+
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.mx-0{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flex{
@@ -558,6 +572,10 @@ html {
 
 .w-4{
   width: 1rem;
+}
+
+.w-96{
+  width: 24rem;
 }
 
 .grid-cols-2{
@@ -606,6 +624,22 @@ html {
 
 .gap-4{
   gap: 1rem;
+}
+
+.gap-3{
+  gap: 0.75rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
+}
+
+.gap-8{
+  gap: 2rem;
+}
+
+.gap-9{
+  gap: 2.25rem;
 }
 
 .rounded-xl{
@@ -668,6 +702,11 @@ html {
   padding-bottom: 0.75rem;
 }
 
+.px-0{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .pt-6{
   padding-top: 1.5rem;
 }
@@ -682,6 +721,10 @@ html {
 
 .pr-2{
   padding-right: 0.5rem;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .text-base{
